@@ -43,22 +43,22 @@ class Program
         }
 
 
-      static double GetUserInput(string prompt)
+      static double GetUserInput(string oa_prompt)
       {
-          double result;
-          bool isValidInput;
+          double oa_result;
+          bool oa_isValidInput;
 
           do
           {
-              Console.Write(prompt);
-              isValidInput = double.TryParse(Console.ReadLine(), out result);
+              Console.Write(oa_prompt);
+              oa_isValidInput = double.TryParse(Console.ReadLine(), out oa_result);
 
-              if (!isValidInput)
+              if (!oa_isValidInput)
                   Console.WriteLine("Liczba nie jest rzeczywista");
 
-          } while (!isValidInput);
+          } while (!oa_isValidInput);
 
-          return result;
+          return oa_result;
       }
 
     }
